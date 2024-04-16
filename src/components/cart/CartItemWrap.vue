@@ -62,6 +62,7 @@ import { mapActions } from 'vuex'
 
 <style lang="scss" scoped>
 .cart-item-wrapp{
+    margin-bottom: 32px;
     &__total{
         position: fixed;
         bottom: 0;

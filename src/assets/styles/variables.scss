@@ -1,10 +1,25 @@
+// FONTS
+$font-main: "Noto Sans", sans-serif;
+$font-h1: clamp(26px, 5.33vw, 48px);
+$font-h2: clamp(22px, 4.44vw, 40px);
+$font-h3: clamp(18px, 3.55vw, 32px);
+$font-text: clamp(16px, 2vw, 18px);
+$font-big: clamp(20px, 2.66vw, 24px);
+$font-sm: clamp(14px, 1.77vw, 16px);
+$font-btn: 16px;
+
+// SPACE
 $padding: 8px;
 $margin: 8px;
 $radius: 4px;
+
+// COLORS
 $color-shadow: #e8e8e8;
 $color-special: #00a046;
 $main-color: #2c3e50;
+$color-hover: #070e14;
 $color-light: #fff;
 $color-border: #ddd;
 $color-popup: rgba(64,64,64,0.4);
 $color-btn: #ff0000;
+

@@ -60,18 +60,24 @@
     margin-left: $margin*3;
     &__title{
         border: 1px solid $color-border;
+        padding: 4px 8px;
+        font-family: $font-main;
+        font-size: 16px;
     }
     &__options{
         border: 1px solid $color-border;
         position: absolute;
-        top: 40px;
+        top: 32px;
         right: 0;
         width: 100%;
         background-color: $color-light;
         text-align: left;
     }
     &__options-item{
+        font-family: $font-main;
+        font-size: 16px;
         margin: 0;
+        padding: 4px 8px;
         cursor: pointer;
         &:hover{
             background-color: $color-shadow;

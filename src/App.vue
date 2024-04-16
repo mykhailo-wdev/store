@@ -5,15 +5,26 @@
 </template>
 
 <script>
-import CatalogWrapper from './components/catalog/CatalogWrapper.vue'
+import CatalogWrapper from "./components/catalog/CatalogWrapper.vue";
 export default {
-  name: 'App',
-  components: { CatalogWrapper }
-}
+  name: "App",
+  components: { CatalogWrapper },
+};
 </script>
 
 <style lang="scss">
-#app{
-  text-align: center;
+body {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #fcf9f0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #374a55;
+    border-radius: 6px;
+  }
 }
 </style>

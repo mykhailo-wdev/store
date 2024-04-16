@@ -1,32 +1,41 @@
-@import './variables.scss';
+@import "./variables.scss";
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    margin: 0;
-    padding: 0;
+a{
+    text-decoration: none;
+    color: inherit;
 }
-.btn{
-    cursor: pointer;
-    display: inline-block;
-    background-color: $color-special;
-    border: none;
-    padding: $padding $padding*2;
-    border-radius: $radius;
-    color: $color-light;
-    &:hover{
-        background-color: #00bc52;
-    }
-    @media (max-width: 470px) {
-        font-size: 14px;
-        padding: $padding;
-    }
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background-color: $color-special;
+  border: none;
+  padding: $padding $padding * 2;
+  border-radius: $radius;
+  color: $color-light;
+  font-family: $font-main;
+  font-weight: 300;
+  font-size: $font-btn;
+  &:hover {
+    background-color: #00bc52;
+  }
+  @media (max-width: 470px) {
+    font-size: 14px;
+    padding: $padding;
+  }
 }
-.link{
-    color: $main-color;
-    &:hover{
-        opacity: 0.8;
-    }
+.link {
+  color: $main-color;
+  &:hover {
+    opacity: 0.8;
+  }
 }
