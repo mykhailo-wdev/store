@@ -1,0 +1,32 @@
+@import './variables.scss';
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    background-color: $color-special;
+    border: none;
+    padding: $padding $padding*2;
+    border-radius: $radius;
+    color: $color-light;
+    &:hover{
+        background-color: #00bc52;
+    }
+    @media (max-width: 470px) {
+        font-size: 14px;
+        padding: $padding;
+    }
+}
+.link{
+    color: $main-color;
+    &:hover{
+        opacity: 0.8;
+    }
+}
