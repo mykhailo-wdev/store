@@ -2,7 +2,7 @@
     <div class="catalog-popup__wrapper" ref="popup_wrapper">
         <div class="catalog-popup">
             <div class="catalog-popup__header">
-                <span class="">{{ popupTitle }}</span>
+                <span class="catalog-popup__title">{{ popupTitle }}</span>
                 <span>
                     <i class="material-icons catalog-popup__icon"
                     @click="closePopup"   
@@ -73,6 +73,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    &__title{
+        font-family: $font-main;
+        font-size: $font-text;
+        color: $main-color;
     }
     &__wrapper{
         display: flex;
