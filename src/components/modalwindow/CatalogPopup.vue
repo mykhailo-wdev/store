@@ -16,6 +16,11 @@
                 <button class="btn catalog-popup__close"
                     @click="closePopup"
                     >Close</button>
+                <div class="catalog-popup__cart-link">
+                    <router-link :to="{ name: 'cart' }">
+                        <p class="catalog-popup__go-cart">Cart&#8599;</p>
+                    </router-link>
+                </div>      
                 <button class="btn"
                     @click="rightBtnAction"
                     >
@@ -107,6 +112,15 @@
     }
     &__close.btn{
         background-color: $color-btn;
+    }
+    &__go-cart {
+        font-family: $font-main;
+        font-size: $font-text;
+        font-weight: 700;
+        &:hover{
+            color: $main-color;
+            text-decoration: underline;
+        }
     }
 }
 </style>
