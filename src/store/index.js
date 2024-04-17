@@ -3,9 +3,10 @@ import  axios  from 'axios'
 
 export default createStore({
     state () {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
         return {
             products: [],
-            cart: [],
+            cart: cart,
             searchQuery: ''
         }
     },
@@ -59,16 +60,20 @@ export default createStore({
               } else {
                 state.cart.push(product)
             }
+            localStorage.setItem('cart', JSON.stringify(state.cart));
         },
         REMOVE_FROM_CART (state, idx) {
             state.cart.splice(idx, 1)
+            localStorage.setItem('cart', JSON.stringify(state.cart));
         },
         INCREMENT (state, idx) {
             state.cart[idx].quantity++
+            localStorage.setItem('cart', JSON.stringify(state.cart)); 
         },
         DECREMENT (state, idx) {
             if(state.cart[idx].quantity > 1) {
                 state.cart[idx].quantity--
+                localStorage.setItem('cart', JSON.stringify(state.cart));
             } 
         },
         SET_SEARCH_QUERY (state, value) {
